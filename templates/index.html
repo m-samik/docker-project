@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>HOME | Docker WEB</title>
+        <link rel="stylesheet" href="../static/index.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../static/index.js"></script>
+        <link rel="shortcut icon" type="image/png" href="../static/images/dockeranim.png"/>
+    </head>
+    <header>
+        <h1 class="head" style="font-family: 'Righteous';">DockerWeb 🐳</h1>
+        <div id="anim"></div>
+        <div class="wave"></div>
+
+        <div class="dwmode">
+        <div class="c1"><button onclick="dark()" <i class="fa fa-moon-o"></i> Dark</button></div>
+        <div class="c1"><button onclick="white()" <i class="fa fa-sun-o"></i> Light</button></div>
+        </div>
+    </header>
+    <body id="bg" style="background-color: wheat; color: black;">
+        <div class="mainhome">
+            <center><h1>Welcome<span class="name"> {{name}} 👋 </span></h1></center>
+        </div>
+
+        <div class="mainc">
+            <div class="ch1">
+                <div><center class="title">Docker Start 🚀</center><br>
+                    <div class="d1">
+                        <name>Enter Your Container Name : </name>
+                        <input id="cname" name="startd" type="name">
+                        <br>
+                        <name>Image Name : </name>
+                        <select id="iname">
+                            <option value="centos:latest">Centos:Latest</option>
+                            <option value="centos:8">Centos:8</option>
+                            <option value="ubuntu:latest">Ubuntu</option>
+                          </select>
+                          <br><br><br><br><br>
+                        <center> <button onclick="myoutput();">Start Container</button></center>
+                    </div>
+                </div>
+            </div>
+            <div class="ch1">
+                <div><center class="title">Docker Status 🚥 </center><br>
+                    <div class="d2">
+                        <center>
+                            <select id="cmd">
+                                <option value="ps">Running Containers</option>
+                                <option value="ps -a">All Old Containers </option>
+    
+                              </select>
+                        </center>
+                          <br><br><br><br><br>
+                        <center> <button onclick="myoutput2();">Check Running Containers</button></center>
+                        <pre><div id="cstatus"></div></pre>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="ch1">
+                <div><center class="title">Docker Stop 🚧 </center><br>
+                    <div class="d1">
+                        <name>Enter Your Container Name : </name>
+                        <input id="dstop" name="stopd" type="name">
+                        <br><br><br><br><br><br>
+                        <center> <button onclick="myoutput3();">Stop Container</button> </center>
+                    </div>
+                </div>
+        </div>
+        &nbsp;
+        <div class="output">
+            <center class="title">Output 🐳</center>
+            <pre><div id="ch2"></div></pre>
+        </div>
+       
+    </body>
+    <footer>
+            <div class="foot">
+                <span class="foot1">Docker Web </span>
+                <span class="foot2">Manage Your Docker Engine </span>
+            </div>
+    </footer>
+    <script>
+        document.onload(anim());
+    </script>
+</html>

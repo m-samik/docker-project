@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+}
+.wave{
+    background-image: url('../static/images/wave.gif');
+    height: 100px;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    bottom: 25;
+
+}
+#anim{
+    background-image: url('../static/images/dockeranim.png');
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+#d2{
+    color: red;
+}
+#d1{
+    color: green;
+}
+
+
+
+.main{
+    position: absolute;
+    left: 580px;
+    top:200px;
+    border: solid 12px rgb(0, 140, 255) ;
+    border-radius: 85px 20px 85px;
+    padding: 30px;
+}
+label{
+    font-size: 20px;
+    color: black;
+}
+
+.t1dark{
+    color: white;
+}
+#ph{
+    height: 30px;
+    width: 150px;
+}
+.ph{
+    height: 30px;
+    width: 90px;
+}
+.buttonp{
+    background-color: rgb(0, 140, 255);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.buttonp2{
+    background-color: rgb(0, 140, 255);
+    padding: 7px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-left: 160px;
+    margin-top: 10px;
+}
+.buttonp:hover{
+    background-color: green;
+    
+}
+.buttonp2:hover{
+    background-color: green;
+    
+}
+
+.head{
+    font-style: inherit;
+    margin-left: 35px;
+    color: rgb(0, 140, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foot{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 140, 255);
+    width: 100%;
+    height: 5%;;
+}
+.foot1{
+    color:white;
+    position: fixed;
+    right: 50;    
+}
+.foot2{
+    color:white;
+    position: fixed;
+    left: 50;    
+}
+.c1{
+    display: inline-block;
+}
+.dwmode{
+    position: fixed;
+    right: 20;
+    top: 20;
+}
+
+.mainhome{
+    color: black;
+}
+.name{
+    color: green;
+}
+
+button{
+    background-color: rgb(0, 140, 255);
+    padding: 7px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    margin-top: 10px;
+}
+.uplogin{
+    background-image: url('../static/images/doclogin.gif');
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 1000px;
+    top: 60px;
+}

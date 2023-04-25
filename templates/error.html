@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Error  | Docker WEB</title>
+        <link rel="stylesheet" href="../static/error.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <header>
+        <h1 class="head">DockerWeb</h1>
+        <div id="anim"></div>
+        <div class="wave"></div>
+
+        <div class="dwmode">
+        <div class="c1"><button onclick="dark()">Dark</button></div>
+        <div class="c1"><button onclick="white()">Light</button></div>
+        </div>
+    </header>
+    <body id="bg" style="background-color: wheat; color: black;">
+    
+        <center><img src="https://freeiconshop.com/wp-content/uploads/edd/error-flat.png">
+        <h1><b>Error</b></h1>
+        <h3>sorry we are not able to process your request at this time.</h3>
+        <br><br><br><br>
+        <span class="goback"><a href="http://127.0.0.1:5000">LOGIN</a></span></center>
+    
+    </body>
+    <footer>
+            <div class="foot">
+                <span class="foot1">Docker Web </span>
+                <span class="foot2">Manage Your Docker Engine </span>
+            </div>
+    </footer>
+<script>
+    i=0;
+    document.onload(anim());
+        function anim(){
+			var r1 = document.getElementById("anim");
+			r1.style.left=i + "px";
+			i++;
+            if (i==1550){
+                //r1.style.backgroundImage="url('../static/images/laod.gif')";
+                i=0;
+            }
+			setTimeout(anim , 10);
+         }
+        
+        function dark(){
+            
+            bgelement = document.getElementById("bg");
+            bgelement.style.backgroundColor="#222222";
+            bgelement.style.color="white";
+        }  
+        function white(){
+            bgelement = document.getElementById("bg");
+            bgelement.style.backgroundColor="wheat";
+            bgelement.style.color="black";
+        } 
+</script>
+</html>

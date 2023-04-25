@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Authenticate Yourself | Docker WEB</title>
+        <link rel="stylesheet" href="../static/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="shortcut icon" type="image/png" href="../static/images/dockeranim.png"/>
+        <script src="../static/login.js"></script>
+    </head>
+    <header>
+        <h1 class="head" style="font-family: 'Righteous'";>DockerWeb 🐳</h1>
+        <div id="anim"></div>
+        <div class="wave"></div>
+
+        <div class="dwmode">
+        <div class="c1"><button onclick="dark()" <i class="fa fa-moon-o"></i> Dark</button></div>
+        <div class="c1"><button onclick="white()" <i class="fa fa-sun-o"></i>Light</button></div>
+        </div>
+    </header>
+    <body id="bg" style="background-color: wheat;">
+        <div class="uplogin"></div>
+        <div class="main" id="mtext">
+            <div class="input1">
+                <label>Enter Your Phone Number : </label>
+                <input id="ph" name="phone" type="number">
+                <button class="buttonp" onclick="mydata()" >Send OTP</button>
+                <span id="load" style="display: none;"><img src="../static/images/laod.gif" height="20px"></span>
+            </div>
+            <br>
+            <div id="d1"></div> 
+            <div class="input1">
+                <form action="/login" method="POST" >
+                    <label>Enter the OTP Recieved  : </label>
+                    <input class="ph" name="otp" type="number">
+                    <div id="d2">{{value}}</div>
+                    <button class="buttonp2" type="submit" >LOGIN</button>
+                </form>
+            </div> 
+        </div>
+        
+    </body>
+    <footer>
+            <div class="foot">
+                <span class="foot1">Docker Web </span>
+                <span class="foot2">Manage Your Docker Engine </span>
+            </div>
+    </footer>
+    <script>
+        document.onload(anim());
+    </script>
+</html>
